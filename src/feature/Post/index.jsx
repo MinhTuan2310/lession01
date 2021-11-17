@@ -12,9 +12,7 @@ function PostFeature() {
 
   return (
     <>
-    <h1>HOME PAGE</h1>
       <Switch>
-
         <Route path={match.path} component={ListPage} exact />
         <Route path={`${match.path}/:postId`} component={DetailPage} />
       </Switch>
